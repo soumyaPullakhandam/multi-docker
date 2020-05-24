@@ -5,18 +5,21 @@
             "name" : "client",
             "image": "soumya9v/multi-client",
             "hostname" : "client",
-            "essential" : false
+            "essential" : false,
+            "memory": 128
         },
         {
             "name" : "server",
             "image": "soumya9v/multi-server",
             "hostname" : "api",
-            "essential" : false
+            "essential" : false,
+            "memory": 128
         },
         {
             "name" : "worker",
             "image": "soumya9v/multi-worker",
-            "essential" : false
+            "essential" : false,
+            "memory": 128
         },
         {
             "name" : "nginx",
@@ -30,7 +33,8 @@
             ],
             "links" : [
                 "client", "server"
-            ]
+            ],
+            "memory": 128
         }
     ]
 }
