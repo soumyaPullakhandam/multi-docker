@@ -3,24 +3,24 @@
     "containerDefinitions" : [
         {
             "name" : "client",
-            "image": "stephengrider/multi-client",
+            "image": "soumya9v/multi-client",
             "hostname" : "client",
             "essential" : false
         },
         {
             "name" : "server",
-            "image": "stephengrider/multi-server",
+            "image": "soumya9v/multi-server",
             "hostname" : "api",
             "essential" : false
         },
         {
             "name" : "worker",
-            "image": "stephengrider/multi-worker",
+            "image": "soumya9v/multi-worker",
             "essential" : false
         },
         {
             "name" : "nginx",
-            "image": "stephengrider/multi-nginx",
+            "image": "soumya9v/multi-nginx",
             "essential" : true,
             "portMappings": [
                 {
